@@ -1,0 +1,111 @@
+main{
+    width: 450px;
+    height: 70vh;
+    padding: 40px;
+    background-image: linear-gradient(to top, rgb(231, 231, 35),rgb(254, 231, 105));
+}
+.title{
+    color: rgb(167, 88, 231);
+    text-shadow: 1px 1px 4px rgb(211, 188, 230);
+    text-transform: uppercase;
+}
+form{
+    width: 350px;
+    height: 40px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 30px;
+}
+button{
+    background-color: rgb(179, 221, 233);
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 3px 4px 6px rgb(213, 212, 212);
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+button:hover{
+    transform: scale(1.001);
+}
+button:active{
+    transform: scale(0.97);
+}
+input[type='text']{
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid gray;
+    padding: 4px 10px;
+    text-transform: capitalize;
+}
+input[type='text']::placeholder{
+    color: rgb(134, 132, 132);
+    font-size: 14px;
+}
+.listContainer{
+    margin: 0 50px 0 0;
+    margin-block:20px;
+    height: 50vh;
+    overflow-y: auto;
+}
+.listContainer::-webkit-scrollbar{
+    display: none;
+}
+.listItem{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    align-content: space-between;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: aliceblue;
+    box-shadow: 1px 2px 2px rgb(206, 205, 205);
+}
+.buttonContainer{
+    display: flex;
+    justify-content: space-between;
+}
+.buttonContainer button{
+    width: 80px;
+    height: 35px;
+    color: white;
+}
+.buttonContainer button.edit{
+    background-color: rgb(76, 76, 231);
+}
+.buttonContainer button.delete{
+    background-color: rgb(232, 113, 113);
+}
+.alert{
+    height: 40px;
+    background-color: rgb(234, 233, 233);
+    line-height: 40px;
+    padding: 3px 30px;
+    border-radius: 8px;
+    box-shadow: 1px 2px 3px rgb(193, 193, 193);
+}
+.alert-danger,.alert-success{
+    color: rgb(255, 254, 254);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+}
+.alert-danger{
+    background-color: rgb(255, 120, 120);
+}
+.alert-success{
+    background-color: rgb(67, 164, 67);
+}
+.noItems{
+    height: 100px;
+    background-color: bisque;
+    display: grid;
+    place-items: center;
+    color: gray;
+    font-size: 18px;
+    border-radius:1px;
+    box-shadow: 1px 3px 4px 3px rgb(210, 209, 209);
+}
